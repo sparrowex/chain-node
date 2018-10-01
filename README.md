@@ -1,13 +1,12 @@
-![Parity Ethereum](docs/logo-parity-ethereum.svg)
+![Sparrow Exchange](https://www.sparrowexchange.com/img/logo.png)
 
-## The fastest and most advanced Ethereum client.
+# Sparrow Chain node
 
-<p align="center"><strong><a href="https://github.com/paritytech/parity-ethereum/releases/latest">» Download the latest release «</a></strong></p>
+Blockchain node for Sparrow Chain.
 
-<p align="center"><a href="https://gitlab.parity.io/parity/parity/commits/master" target="_blank"><img src="https://gitlab.parity.io/parity/parity/badges/master/build.svg" /></a>
-<a href="https://codecov.io/gh/paritytech/parity-ethereum" target="_blank"><img src="https://codecov.io/gh/paritytech/parity-ethereum/branch/master/graph/badge.svg" /></a>
-<a href="https://build.snapcraft.io/user/paritytech/parity" target="_blank"><img src="https://build.snapcraft.io/badge/paritytech/parity.svg" /></a>
-<a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank"><img src="https://img.shields.io/badge/license-GPL%20v3-green.svg" /></a></p>
+Based off [Parity Tech's Parity Ethereum](https://github.com/paritytech/parity-ethereum)
+
+## Parity Ethereum - The fastest and most advanced Ethereum client.
 
 **Built for mission-critical use**: Miners, service providers, and exchanges need fast synchronisation and maximum uptime. Parity Ethereum provides the core infrastructure essential for speedy and reliable services.
 
@@ -148,27 +147,6 @@ To start Parity Ethereum as a regular user using `systemd` init:
 1. Copy `./scripts/parity.service` to your
 `systemd` user directory (usually `~/.config/systemd/user`).
 2. To configure Parity Ethereum, write a `/etc/parity/config.toml` config file, see [Configuring Parity Ethereum](https://paritytech.github.io/wiki/Configuring-Parity) for details.
-
-## Parity Ethereum toolchain
-
-In addition to the Parity Ethereum client, there are additional tools in this repository available:
-
-- [evmbin](https://github.com/paritytech/parity-ethereum/blob/master/evmbin/) - EVM implementation for Parity Ethereum.
-- [ethabi](https://github.com/paritytech/ethabi) - Parity Ethereum function calls encoding.
-- [ethstore](https://github.com/paritytech/parity-ethereum/blob/master/ethstore/) - Parity Ethereum key management.
-- [ethkey](https://github.com/paritytech/parity-ethereum/blob/master/ethkey/) - Parity Ethereum keys generator.
-- [whisper](https://github.com/paritytech/parity-ethereum/blob/master/whisper/) - Implementation of Whisper-v2 PoC.
-
-## Join the chat!
-
-Questions? Get in touch with us on Gitter:
-[![Gitter: Parity](https://img.shields.io/badge/gitter-parity-4AB495.svg)](https://gitter.im/paritytech/parity)
-[![Gitter: Parity.js](https://img.shields.io/badge/gitter-parity.js-4AB495.svg)](https://gitter.im/paritytech/parity.js)
-[![Gitter: Parity/Miners](https://img.shields.io/badge/gitter-parity/miners-4AB495.svg)](https://gitter.im/paritytech/parity/miners)
-[![Gitter: Parity-PoA](https://img.shields.io/badge/gitter-parity--poa-4AB495.svg)](https://gitter.im/paritytech/parity-poa)
-
-Alternatively, join our community on Matrix:
-[![Riot: +Parity](https://img.shields.io/badge/riot-%2Bparity%3Amatrix.parity.io-orange.svg)](https://riot.im/app/#/group/+parity:matrix.parity.io)
 
 ## Documentation
 
