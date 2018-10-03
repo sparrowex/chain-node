@@ -1,50 +1,57 @@
-{
-	"name": "Sparrow PoA Chain",
-	"engine": {
-		"authorityRound": {
-			"params": {
-				"stepDuration": 1,
-				"validators": {
-					"list": [
-						"0x3A7Dfe4B00c61bC71ed8566beF7D97eC15Cb0A0b",
-						"0xaa551384543F50cac1AfaCB07982a6c404E7FD2A",
-						"0xeDE78f8ba1b4b3531bFa229224A88BA0A0D8E3eC",
-						"0xDEDDa86395BBc4a79063C3d75C41F104d429C0aB",
-						"0x32E79E926caBd82ce82D3be16C4f6E0ac7EaC18B"
-					]
-				}
-			}
-		}
-	},
-	"params": {
-		"gasLimitBoundDivisor": "0x0400",
-		"accountStartNonce": "0x0",
-		"maximumExtraDataSize": "0x20",
-		"minGasLimit": "0x1388",
-		"networkID" : "0x31ee7",
-		"eip155Transition": 0,
-		"validateChainIdTransition": 0,
-		"eip140Transition": 0,
-		"eip211Transition": 0,
-		"eip214Transition": 0,
-		"eip658Transition": 0
-	},
-	"genesis": {
-		"seal": {
-			"authorityRound": {
-				"step": "0x0",
-				"signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
-			}
-		},
-		"difficulty": "0x20000",
-		"gasLimit": "0x3B9ACA00"
-	},
-	"accounts": {
-		"0000000000000000000000000000000000000001": { "balance": "1", "nonce": "1048576", "builtin": { "name": "ecrecover", "pricing": { "linear": { "base": 3000, "word": 0 } } } },
-		"0000000000000000000000000000000000000002": { "balance": "1", "nonce": "1048576", "builtin": { "name": "sha256", "pricing": { "linear": { "base": 60, "word": 12 } } } },
-		"0000000000000000000000000000000000000003": { "balance": "1", "nonce": "1048576", "builtin": { "name": "ripemd160", "pricing": { "linear": { "base": 600, "word": 120 } } } },
-		"0000000000000000000000000000000000000004": { "balance": "1", "nonce": "1048576", "builtin": { "name": "identity", "pricing": { "linear": { "base": 15, "word": 3 } } } },
-		"0x3A7Dfe4B00c61bC71ed8566beF7D97eC15Cb0A0b": { "balance": "10000000000000", "nonce": "0" },
-		"0xaa551384543F50cac1AfaCB07982a6c404E7FD2A": { "balance": "10000000000000", "nonce": "0" }
-	}
-	}
+ {
+  "name": "Sparrow-PoA-testnet",
+  "engine": {
+    "authorityRound": {
+      "params": {
+        "stepDuration": "4",
+        "blockReward": "0x8AC7230489E80000",
+        "validators": {
+          "list": [
+            "0x3A7Dfe4B00c61bC71ed8566beF7D97eC15Cb0A0b",
+            "0xaa551384543F50cac1AfaCB07982a6c404E7FD2A",
+            "0xeDE78f8ba1b4b3531bFa229224A88BA0A0D8E3eC"
+          ]
+        }
+      }
+    }
+  },
+  "params": {
+    "gasLimitBoundDivisor": "0x0400",
+    "accountStartNonce": "0x0",
+    "maximumExtraDataSize": "0x20",
+    "minGasLimit": "0x3B9ACA00",
+    "networkID" : "0x31ee7",
+    "eip155Transition": 0,
+    "validateChainIdTransition": 0,
+    "eip140Transition": 0,
+    "eip211Transition": 0,
+    "eip214Transition": 0,
+    "eip658Transition": 0
+  },
+  "genesis": {
+    "seal": {
+      "authorityRound": {
+        "step": "0x0",
+        "signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "difficulty": "0x20000",
+    "gasLimit": "0x3B9ACA00"
+  },
+  "accounts": {
+    "0000000000000000000000000000000000000001": { "balance": "1", "nonce": "1048576", "builtin": { "name": "ecrecover", "pricing": { "linear": { "base": 3000, "word": 0 } } } },
+    "0000000000000000000000000000000000000002": { "balance": "1", "nonce": "1048576", "builtin": { "name": "sha256", "pricing": { "linear": { "base": 60, "word": 12 } } } },
+    "0000000000000000000000000000000000000003": { "balance": "1", "nonce": "1048576", "builtin": { "name": "ripemd160", "pricing": { "linear": { "base": 600, "word": 120 } } } },
+    "0000000000000000000000000000000000000004": { "balance": "1", "nonce": "1048576", "builtin": { "name": "identity", "pricing": { "linear": { "base": 15, "word": 3 } } } },
+    "0x3A7Dfe4B00c61bC71ed8566beF7D97eC15Cb0A0b": { "balance": "100000000000000000000000", "nonce": "0" },
+    "0xaa551384543F50cac1AfaCB07982a6c404E7FD2A": { "balance": "100000000000000000000000", "nonce": "0" },
+    "0xeDE78f8ba1b4b3531bFa229224A88BA0A0D8E3eC": { "balance": "100000000000000000000000", "nonce": "0" },
+    "0xDEDDa86395BBc4a79063C3d75C41F104d429C0aB": { "balance": "100000000000000000000000", "nonce": "0" },
+    "0x32E79E926caBd82ce82D3be16C4f6E0ac7EaC18B": { "balance": "100000000000000000000000", "nonce": "0" }
+  },
+  "nodes": [
+  	"enode://961f4246adf51de56d122b15490cdf113c661f0cb4f68bd2c01a192c89c1c95e5bc0c45be1ea95f806ffb0f17876bbbfa2658f7dbaae4085b3f3ffd6ddbe6e82@3.0.6.236:30303",
+  	"enode://370a3f06be0569ac675c1d327824ad0ab387b408e03bf1d301105b5b9de05034c23fda2a1e7f603b573f478ba1777c8ce5c7b94826685b000d8513ad931f4671@13.55.0.205:30303",
+  	"enode://be6a610fe71029459df0a3f805f4f49c380552e66b83bd809073c8906f646193b8767a7aea439bb72e2c45102f46ba797678e9faab39ac6d069beb6fd3b3f82e@3.0.25.115:30303"
+  ]
+}
