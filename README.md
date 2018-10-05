@@ -1,8 +1,8 @@
 ![Sparrow Exchange](https://www.sparrowexchange.com/img/logo.png)
 
-# Sparrow Chain node
+# Nidus node
 
-Blockchain node for Sparrow Chain.
+Nidus node for Sparrow Exchange
 
 Based off [Parity Tech's Parity Ethereum](https://github.com/paritytech/parity-ethereum)
 
